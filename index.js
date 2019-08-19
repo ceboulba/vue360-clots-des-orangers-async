@@ -13,6 +13,12 @@ var imgs = [
   'https://res.cloudinary.com/archipicture/image/upload/v1562173702/clot-des-orangers/clots-des-orangets-03.jpg',
 ]
 
+const imgsArr = imgs.map(url => {
+const imgLoaded = new Image()
+imgLoaded.src = url
+return imgLoaded
+})
+
 let num = 0
 
 const btnPrev = document.getElementById('btnPrev').addEventListener('click', () => prev())
@@ -65,14 +71,14 @@ const check = () => {
       imgBox.classList.add('hide')
     })()
   // scene.render()
-  num === 0 ? imgView.src = imgs[0] : null
-  num === 1 ? imgView.src = imgs[1] : null
+  num === 0 ? imgView.src = imgsArr[0] : null
+  num === 1 ? imgView.src = imgsArr[1] : null
 }
 
 check()
 
 const next = () => {
-  num < imgs.length - 1 ?
+  num < imgsArr.length - 1 ?
     num++
     : num = 0
   scene = createScene()
@@ -82,7 +88,7 @@ const next = () => {
 const prev = () => {
   //event.preventDefault()
   num === 0 ?
-    num = imgs.length - 1
+    num = imgsArr.length - 1
     : num--
   scene = createScene()
   check()
