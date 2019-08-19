@@ -7,10 +7,10 @@ const imgView = document.getElementById('img-view')
 const viewType = document.querySelector('.view-type')
 
 var imgs = [
-  'https://res.cloudinary.com/archipicture/image/upload/v1563284170/clot-des-orangers/clots-des-orangets-00.jpg',
-  'https://res.cloudinary.com/archipicture/image/upload/v1562147842/clot-des-orangers/clots-des-orangets-01.jpg',
-  'https://res.cloudinary.com/archipicture/image/upload/v1562184780/clot-des-orangers/clots-des-orangets-02.jpg',
-  'https://res.cloudinary.com/archipicture/image/upload/v1562173702/clot-des-orangers/clots-des-orangets-03.jpg',
+  'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-00.jpg',
+  'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-01.jpg',
+  'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-02.jpg',
+  'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-03.jpg',
 ]
 
 const imgsArr = imgs.map(url => {
