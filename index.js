@@ -5,10 +5,11 @@ const canvas = document.getElementById('renderCanvas')
 const imgBox = document.getElementById('img-box')
 const imgView = document.getElementById('img-view')
 const viewType = document.querySelector('.view-type')
+const imgArrLoaded = []
 
 var imgs = [
   'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-00.jpg',
-  'https://res.cloudinary.com/archipicture/image/upload/v1562147842/clot-des-orangers/clots-des-orangets-01.jpg',
+  'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-01.jpg',
   'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-02.jpg',
   'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-03.jpg',
 ]
@@ -16,10 +17,10 @@ var imgs = [
 const imgsArr = imgs.map(url => {
 const imgLoaded = new Image()
 imgLoaded.src = url
-imgLoaded.onload = () => imgLoaded;
+imgLoaded.onload = () => imgArrLoaded.push(imgLoaded);
 return imgLoaded
 })
-console.log(imgsArr)
+console.log(imgArrLoaded)
 
 let num = 0
 
@@ -73,8 +74,8 @@ const check = () => {
       imgBox.classList.add('hide')
     })()
   // scene.render()
-  num === 0 ? imgsArr[0] : null
-  num === 1 ? imgsArr[1] : null
+  num === 0 ? imgArrLoaded[0] : null
+  num === 1 ? imgArrLoaded[1] : null
 }
 
 check()
