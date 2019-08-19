@@ -74,7 +74,7 @@ const check = () => {
     })()
   // scene.render()
   num === 0 ? imgsArr[0] : null
-  num === 1 ? imgView.src = imgsArr[1] : null
+  num === 1 ? imgsArr[1] : null
 }
 
 check()
