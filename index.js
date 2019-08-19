@@ -18,6 +18,7 @@ const imgLoaded = new Image()
 imgLoaded.src = url
 return imgLoaded
 })
+console.log(imgsArr)
 
 let num = 0
 
