@@ -8,7 +8,7 @@ const viewType = document.querySelector('.view-type')
 
 var imgs = [
   'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-00.jpg',
-  'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-01.jpg',
+  'https://res.cloudinary.com/archipicture/image/upload/v1562147842/clot-des-orangers/clots-des-orangets-01.jpg',
   'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-02.jpg',
   'https://res.cloudinary.com/archipicture/image/upload/clot-des-orangers/clots-des-orangets-03.jpg',
 ]
