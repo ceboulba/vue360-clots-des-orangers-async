@@ -16,7 +16,7 @@ var imgs = [
 const imgsArr = imgs.map(url => {
 const imgLoaded = new Image()
 imgLoaded.src = url
-imgLoaded.onload = () => imgLoaded;
+imgLoaded.onload = () => console.log(imgLoaded);
 //return imgLoaded
 })
 console.log(imgsArr)
